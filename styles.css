@@ -184,6 +184,9 @@ button.active {
   background-color: #fcfbfa;
   padding-left: 93px;
 }
+.searchbutton:hover {
+  transform: scale(1.05);
+}
 .searchbutton {
   width: 293px;
   height: 80px;
@@ -192,6 +195,7 @@ button.active {
   border-radius: 10px;
   font-size: 24px;
   border: 0;
+  transition: 0.2s;
 }
 b {
   font-style: italic;
@@ -222,7 +226,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
-  padding: 0 100px;
+  padding: 0 85px 0 110px;
   z-index: 100;
   padding-bottom: 25px;
 }
@@ -420,13 +424,12 @@ p {
 .verticalLine {
   z-index: 1;
 }
-@media only screen and(max-width:600px) {
-  .foto {
-    width: 10%;
-  }
+.size {
+  width: 15vw;
 }
-@media only screen and(max-width:1970px) {
-  .photos {
-    grid-template-columns: 1fr 1fr 1fr;
+
+/* @media (max-width: 1970px) {
+  .size {
+    width: 92.5%;
   }
-}
+} */
